@@ -1,0 +1,27 @@
+$right:left !important;
+$left: right !important;
+body {
+    direction: rtl;
+    text-align: right !important;
+}
+
+.sideMenu {
+    right: 0;
+    .list-btn,
+    .dashboard-category {
+        text-align: right;
+    }
+}
+
+.myPage {
+    //margin-right: $dashboard-width;
+    //margin-right: auto;
+}
+
+.myPage-header {
+    width: calc(100% - 280px) !important;
+}
+
+.www {
+    width: calc(100% - 280px) !important;
+}

@@ -1,0 +1,116 @@
+$dashboard-width:280px;
+.dashboard {
+    overflow-y: visible;
+    overflow-x: hidden;
+    width: 280px;
+    height: 900px;
+    top: 66px;
+    //left: 0;
+    position: sticky;
+    //background-image: linear-gradient(to top, #232526, #434343) !important;
+    background-color: #434343 !important;
+    transition: $transation;
+    z-index: 100;
+    @media screen and (max-width: 767px) {
+        position: fixed;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    .dashboard-list {
+        padding: 30px;
+        hr {
+            border-color: $danger-color;
+        }
+        .dashboard-card {
+            margin-top: 15px;
+            .dashboard-card-title {
+                text-transform: uppercase;
+                font-size: 14px;
+                margin: 0.75rem 0;
+                font-weight: bold;
+                color: $light-color;
+                white-space: nowrap;
+                position: relative;
+                border-bottom: 1px solid white;
+            }
+            .dashboard-card-btn {
+                margin-top: 15px;
+                .list-btn {
+                    color: $light-color;
+                    display: block;
+                    border: none;
+                    text-align: $left;
+                    height: 40px;
+                    padding: 0px 15px;
+                    overflow: hidden;
+                    cursor: pointer;
+                    width: 100%;
+                    i {
+                        width: 30px;
+                        height: 30px;
+                    }
+                    .left-icon {
+                        font-size: 24px;
+                        font-weight: 100;
+                        float: $left;
+                        display: none;
+                        .img-icon {
+                            width: 25px;
+                            height: 25px;
+                            overflow: hidden;
+                            margin-bottom: 10px;
+                        }
+                    }
+                    .right-icon {
+                        float: right;
+                        font-size: 18px;
+                    }
+                    .dashboard-category {
+                        padding-left: 8px;
+                        margin-top: 10px;
+                        height: 40px !important;
+                        font-size: 15px;
+                        font-weight: bold;
+                        white-space: nowrap;
+                    }
+                    &:hover {
+                        background: none !important;
+                        background-color: #434343;
+                        box-shadow: 0 1px 5px, 0 -1px 5px white;
+                        font-size: initial !important;
+                        transition: all 0.5s;
+                        border-radius: 45px;
+                    }
+                }
+                .dashboard-card-list {
+                    margin-left: 25px;
+                    border-left: 1px solid $danger-color;
+                    li {
+                        .sublist-btn {
+                            margin: 10px 10px 0 10px;
+                            width: 93%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .toggle-btn {
+        position: relative;
+        .dashboard-toggle-btn {
+            position: fixed !important;
+            top: 80px !important;
+            left: 20px !important;
+            list-style: none;
+            span {
+                margin-top: 7px !important;
+                box-shadow: 0 1px 5px #a62a2a, 0 -1px 5px #a62a2a;
+                border: 1px solid #a62a2a;
+                background-color: $dark-color;
+            }
+            // margin-left: 290px !important;
+        }
+    }
+}

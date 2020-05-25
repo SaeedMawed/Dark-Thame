@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- my Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sass/style.css">
+    <link rel="stylesheet" href="css/home.css">
+
+    <title>Dark Theme</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav class="navbar navbar-expand-lg navbar-light box-shadow fixed-top ">
+            <a class="navbar-brand text-white" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse  justify-content-between " id="navbarSupportedContent">
+                <ul class="navbar-nav  justify-content-start">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">About us</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 justify-content-end">
+                    <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0 btn-shadow  header-search-btn border-0 " type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </section>
+    <section class="main-page d-flex">
+        <section class="dashboard" id="dashboardSection">
+            <div class="visible-xs">
+                <li class="toggle-btn">
+                    <div class="dashboard-toggle-btn" id="dashboard-open-btn" style="display: none" onclick="openDashboard()">
+                        <span></span> <span></span> <span></span>
+                    </div>
+                </li>
+                <li class="toggle-btn">
+                    <div class="dashboard-toggle-btn" id="dashboard-close-btn" style="display: block" onclick="closeDashboard()">
+                        <span></span> <span></span> <span></span>
+                    </div>
+                </li>
+            </div>
+            <ul class="dashboard-list accordion" id="accordionDashboard">
+                <div class="dashboard-card">
+                    <span class="dashboard-card-title">Main Function</span>
+                    <div class="dashboard-card-btn">
+                        <button type="button" class="list-btn btn category-btn box-shadow" data-toggle="collapse" data-target="#dashboard">
+                                 <span
+                                class="dashboard-category">Dashboard</span> <i
+                                class=" glyphicon glyphicon-menu-down right-icon" id="right-icon"></i>
+                            </button>
+                        <ul class="dashboard-card-list collapse mt-3" id="dashboard" data-parent="#accordionDashboard">
+                            <li>
+                                <form action="http://google.com">
+                                    <input class="list-btn btn sublist-btn btn-shadow" type="submit" value="Total Reports" />
+                                </form>
+                            </li>
+                            <li>
+                                <form action="http://google.com">
+                                    <input class="btn-shadow list-btn btn sublist-btn " type="submit" value="Users" />
+                                </form>
+                            </li>
+                            <li>
+                                <form action="http://google.com">
+                                    <input class="list-btn btn sublist-btn btn-shadow" type="submit" value="Products" />
+                                </form>
+                            </li>
+                            <li>
+                                <form action="http://google.com">
+                                    <input class="list-btn btn sublist-btn btn-shadow" type="submit" value="Orders" />
+                                </form>
+                            </li>
+                            <li>
+                                <form action="http://google.com">
+                                    <input class="list-btn btn sublist-btn btn-shadow" type="submit" value="Delivery" />
+                                </form>
+                            </li>
+                            <li>
+                                <form action="http://google.com">
+                                    <input class="list-btn btn sublist-btn btn-shadow" type="submit" value="Categories" />
+                                </form>
+                            </li>
+                            <li>
+                                <form action="http://google.com">
+                                    <input class="list-btn btn sublist-btn btn-shadow" type="submit" value="Payments" />
+                                </form>
+                            </li>
+                            <li>
+                                <form action="http://google.com">
+                                    <input class="list-btn btn sublist-btn btn-shadow" type="submit" value="Advertisement" />
+                                </form>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="dashboard-card-btn">
+                        <button type="button" class="list-btn btn category-btn box-shadow" data-toggle="collapse" data-target="#pages">
+                            <span
+                                class="dashboard-category">Pages</span> <i
+                                class=" glyphicon glyphicon-menu-down right-icon" id="right-icon"></i>
+                        </button>
+                        <ul class="dashboard-card-list collapse mt-3" id="pages" data-parent="#accordionDashboard">
+                            <li>
+                                <form action="http://google.com">
+                                    <input class="list-btn btn sublist-btn btn-shadow" type="submit" value="Home" />
+                                </form>
+                            </li>
+                            <li>
+                                <form action="http://google.com">
+                                    <input class="list-btn btn sublist-btn btn-shadow" type="submit" value="Dashboard" />
+                                </form>
+                            </li>
+                            <li>
+                                <form action="http://google.com">
+                                    <input class="list-btn btn sublist-btn btn-shadow" type="submit" value="Our Services" />
+                                </form>
+                            </li>
+                            <li>
+                                <form action="http://google.com">
+                                    <input class="list-btn btn sublist-btn btn-shadow" type="submit" value="Contact us" />
+                                </form>
+                            </li>
+                            <li>
+                                <form action="http://google.com">
+                                    <input class="list-btn btn sublist-btn btn-shadow" type="submit" value="About" />
+                                </form>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <hr class="d-none">
+                <div class="dashboard-card">
+                    <span class="dashboard-card-title">Personal stuff</span>
+                    <div class="dashboard-card-btn">
+                        <button type="button" class="list-btn btn category-btn box-shadow" data-toggle="collapse" data-target="#personal">
+                             <span
+                                class="dashboard-category">Personal</span> <i
+                                class=" glyphicon glyphicon-menu-down right-icon" id="right-icon"></i>
+                        </button>
+                        <ul class="dashboard-card-list collapse" id="personal" data-parent="#accordionDashboard">
+                            <li>
+                                <form action="http://google.com">
+                                    <input class="list-btn btn sublist-btn btn-shadow" type="submit" value="My Profile" />
+                                </form>
+                            </li>
+                            <li>
+                                <form action="http://google.com">
+                                    <input class="list-btn btn sublist-btn btn-shadow" type="submit" value="My Orders" />
+                                </form>
+                            </li>
+                            <li>
+                                <form action="http://google.com">
+                                    <input class="list-btn btn sublist-btn btn-shadow" type="submit" value="Favourites" />
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dashboard-card-btn">
+                        <button type="button" class="list-btn btn category-btn box-shadow" data-toggle="collapse" data-target="#massages">
+                             <span
+                                class="dashboard-category">Massages</span> <i
+                                class=" glyphicon glyphicon-menu-down right-icon" id="right-icon"></i>
+                        </button>
+                        <ul class="dashboard-card-list  collapse" id="massages" data-parent="#accordionDashboard">
+                            <li>
+                                <form action="http://google.com">
+                                    <input class="list-btn btn sublist-btn btn-shadow" type="submit" value="Inbox" />
+                                </form>
+                            </li>
+                            <li>
+                                <form action="http://google.com">
+                                    <input class="list-btn btn sublist-btn btn-shadow" type="submit" value="Starred" />
+                                </form>
+                            </li>
+                            <li>
+                                <form action="http://google.com">
+                                    <input class="list-btn btn sublist-btn btn-shadow" type="submit" value="Important" />
+                                </form>
+                            </li>
+                            <li>
+                                <form action="http://google.com">
+                                    <input class="list-btn btn sublist-btn btn-shadow" type="submit" value="Sent" />
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+            </ul>
+
+        </section>
+        <section class="main-layout myPage ">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="my-product">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    Featured
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary btn-shadow">Go somewhere</a>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    2 days ago
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-6">
+                        <div class="my-product">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    Featured
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary btn-shadow">Go somewhere</a>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    2 days ago
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-6">
+                        <div class="my-product">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    Featured
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary btn-shadow">Go somewhere</a>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    2 days ago
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-6">
+                        <div class="my-product">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    Featured
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary btn-shadow">Go somewhere</a>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    2 days ago
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-6">
+                        <div class="my-product">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    Featured
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary btn-shadow">Go somewhere</a>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    2 days ago
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-6">
+                        <div class="my-product">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    Featured
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary btn-shadow">Go somewhere</a>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    2 days ago
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-6">
+                        <div class="my-product">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    Featured
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary btn-shadow">Go somewhere</a>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    2 days ago
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-6">
+                        <div class="my-product">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    Featured
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary btn-shadow">Go somewhere</a>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    2 days ago
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-6">
+                        <div class="my-product">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    Featured
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary btn-shadow">Go somewhere</a>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    2 days ago
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-6">
+                        <div class="my-product">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    Featured
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary btn-shadow">Go somewhere</a>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    2 days ago
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-6">
+                        <div class="my-product">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    Featured
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary btn-shadow">Go somewhere</a>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    2 days ago
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <section class="footer">
+        <!-- Start Footer -->
+        <div class="footer box-shadow" id="footer" onclick="closeDashboard()">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-6 col-xs-12 segment-one md-mb-30 sm-mb-30">
+                            <h2>Divinector</h2>
+                            <p>Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-tow md-mb-30 sm-mb-30">
+                            <h2>Useful Link</h2>
+                            <ul>
+                                <li><a href="#">Bla Bla</a></li>
+                                <li><a href="#">Bla Bla</a></li>
+                                <li><a href="#">Bla Bla</a></li>
+                                <li><a href="#">Bla Bla</a></li>
+                                <li><a href="#">Bla Bla</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-three md-mb-30 sm-mb-30">
+                            <h2>Follow Us </h2>
+                            <p>Please Follow us on our Social Media Profile in order to keep updated. Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 segment-four md-mb-30 sm-mb-30">
+                            <h2>Our NewLetter</h2>
+                            <p>Please Follow us on our Social Media Profile in order to keep updated. Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                            <form action="">
+                                <input type="email">
+                                <input type="submit" value="subscribe">
+                            </form>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <p class="footer-bottom-text text-white box-shadow">All Right reserved by &copy;Saeed-Mawed.2020</p>
+        </div>
+
+        <!-- End Footer -->
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+</body>
+
+</html>

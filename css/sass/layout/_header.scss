@@ -1,0 +1,38 @@
+@import '../components/status';
+.header {
+    position: relative !important;
+    .navbar {
+        background: #434343;
+        padding: 1rem;
+        @media screen and (min-width: 768px) {
+            padding: 1rem;
+        }
+        .nav-item {
+            margin: 0px 5px;
+            @media screen and (max-width: 768px) {
+                margin: 5px;
+            }
+            &:hover {
+                @media screen and (min-width: 768px) {
+                    margin-top: -5px;
+                }
+                @media screen and (max-width: 768px) {
+                    background-color: $danger-color;
+                }
+            }
+        }
+        .form-control {
+            border: 1px solid #a62a2a;
+            &:focus {
+                box-shadow: 0px 1px 5px #a62a2a, 0px -1px 5px #a62a2a;
+            }
+        }
+        .header-search-btn {
+            &:hover {
+                color: $white-color;
+                font-size: initial;
+                font-weight: initial;
+            }
+        }
+    }
+}

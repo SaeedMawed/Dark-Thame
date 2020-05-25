@@ -1,0 +1,9 @@
+.my-product {
+  margin: 15px 0 0 10px; }
+  .my-product .card {
+    max-height: auto;
+    box-shadow: 0px 2px 8px #a62a2a, 0px -2px 8px #a62a2a; }
+  .my-product:hover {
+    margin-top: 5px; }
+
+/*# sourceMappingURL=home.css.map */
