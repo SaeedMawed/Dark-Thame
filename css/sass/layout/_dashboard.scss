@@ -11,6 +11,7 @@ $dashboard-width:280px;
     background-color: #434343 !important;
     transition: $transation;
     z-index: 100;
+    border: 0 !important;
     @media screen and (max-width: 767px) {
         position: fixed;
     }
@@ -99,10 +100,11 @@ $dashboard-width:280px;
     }
     .toggle-btn {
         position: relative;
+        cursor: pointer;
         .dashboard-toggle-btn {
             position: fixed !important;
             top: 80px !important;
-            left: 20px !important;
+            left: 5px !important;
             list-style: none;
             span {
                 margin-top: 7px !important;
@@ -110,7 +112,6 @@ $dashboard-width:280px;
                 border: 1px solid #a62a2a;
                 background-color: $dark-color;
             }
-            // margin-left: 290px !important;
         }
     }
 }

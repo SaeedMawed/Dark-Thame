@@ -14,10 +14,16 @@
             }
             &:hover {
                 @media screen and (min-width: 768px) {
-                    margin-top: -5px;
+                    //margin-top: -5px;
+                    background: linear-gradient(to left, #6a2b31, #dc3545);
+                    color: $light-color;
+                    transition: all 0.5s !important;
                 }
                 @media screen and (max-width: 768px) {
-                    background-color: $danger-color;
+                    //background-color: $danger-color;
+                    background: linear-gradient(to left, #6a2b31, #dc3545);
+                    color: $light-color;
+                    transition: all 0.5s !important;
                 }
             }
         }

@@ -1,9 +1,19 @@
-.my-product {
+.home .col-lg-12 {
+  padding-left: 5px !important;
+  padding-right: 5px !important; }
+.home .col-lg-4 {
+  padding-left: 5px !important;
+  padding-right: 5px !important; }
+  @media screen and (min-width: 1250px) {
+    .home .col-lg-4 {
+      flex: 0 0 25%;
+      max-width: 25%; } }
+.home .my-product {
   margin: 15px 0 0 10px; }
-  .my-product .card {
+  .home .my-product .card {
     max-height: auto;
     box-shadow: 0px 2px 8px #a62a2a, 0px -2px 8px #a62a2a; }
-  .my-product:hover {
+  .home .my-product:hover {
     margin-top: 5px; }
 
 /*# sourceMappingURL=home.css.map */

@@ -50,10 +50,14 @@ body {
           margin: 5px; } }
       @media screen and (min-width: 768px) {
         .header .navbar .nav-item:hover {
-          margin-top: -5px; } }
+          background: linear-gradient(to left, #6a2b31, #dc3545);
+          color: #f8f9fa !important;
+          transition: all 0.5s !important; } }
       @media screen and (max-width: 768px) {
         .header .navbar .nav-item:hover {
-          background-color: #dc3545 !important; } }
+          background: linear-gradient(to left, #6a2b31, #dc3545);
+          color: #f8f9fa !important;
+          transition: all 0.5s !important; } }
     .header .navbar .form-control {
       border: 1px solid #a62a2a; }
       .header .navbar .form-control:focus {
@@ -230,7 +234,8 @@ hr {
   position: sticky;
   background-color: #434343 !important;
   transition: all 0.5s;
-  z-index: 100; }
+  z-index: 100;
+  border: 0 !important; }
   @media screen and (max-width: 767px) {
     .dashboard {
       position: fixed; } }
@@ -301,11 +306,12 @@ hr {
             margin: 10px 10px 0 10px;
             width: 93%; }
   .dashboard .toggle-btn {
-    position: relative; }
+    position: relative;
+    cursor: pointer; }
     .dashboard .toggle-btn .dashboard-toggle-btn {
       position: fixed !important;
       top: 80px !important;
-      left: 20px !important;
+      left: 5px !important;
       list-style: none; }
       .dashboard .toggle-btn .dashboard-toggle-btn span {
         margin-top: 7px !important;
@@ -389,7 +395,6 @@ hr {
       background: linear-gradient(to left, #6a2b31, #dc3545);
       border: none;
       padding: 3px 7px;
-      margin-left: -5px;
       color: #fff;
       text-transform: uppercase;
       text-align: center; }
@@ -418,21 +423,26 @@ hr {
 
 html,
 body {
-  background-color: #434343 !important; }
+  background-color: #434343 !important;
+  margin: 0px !important;
+  padding: 0px !important; }
 
 .myPage {
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  justify-content: center; }
   @media screen and (min-width: 768px) {
     .myPage {
       margin-left: auto;
-      margin-right: auto; } }
+      margin-right: auto;
+      margin-top: 68px; } }
   @media screen and (max-width: 768px) {
     .myPage {
       width: 94%;
       margin-left: 3%;
       margin-right: 3%; } }
+  @media (width: 768px) {
+    .myPage {
+      margin-top: 0px; } }
 
 .main-page {
   transition: all 0.5s;
@@ -440,8 +450,14 @@ body {
   min-height: 1500px;
   background-color: #434343 !important;
   position: relative;
-  margin: 25px 0 0 0;
-  padding: 50px 5%; }
+  padding: 72px 5%; }
+  @media screen and (max-width: 768px) {
+    .main-page {
+      padding: 72px 0; } }
+  @media (width: 768px) {
+    .main-page {
+      margin-left: 2rem;
+      justify-content: center; } }
 
 .shadow-lg {
   box-shadow: 0 1rem 12rem rgba(0, 0, 0, 0.08) !important; }
