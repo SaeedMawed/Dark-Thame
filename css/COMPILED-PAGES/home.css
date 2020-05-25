@@ -8198,7 +8198,8 @@ hr {
   @media screen and (max-width: 767px) {
     .footer .footer-top {
       width: 100%;
-      margin: 0; } }
+      margin: 0;
+      padding: 80px 20px !important; } }
 
 html,
 body {
@@ -8273,16 +8274,15 @@ body {
 
   .container {
     max-width: none; } }
-.home .col-lg-12 {
-  padding-left: 5px !important;
-  padding-right: 5px !important; }
+.home .col-lg-12,
+.home .col-lg-6,
 .home .col-lg-4 {
-  padding-left: 5px !important;
-  padding-right: 5px !important; }
-  @media screen and (min-width: 1250px) {
-    .home .col-lg-4 {
-      flex: 0 0 25%;
-      max-width: 25%; } }
+  padding-left: 8px !important;
+  padding-right: 8px !important; }
+@media screen and (min-width: 1250px) {
+  .home .col-lg-4 {
+    flex: 0 0 25%;
+    max-width: 25%; } }
 .home .my-product {
   margin: 15px 0 0 10px; }
   .home .my-product .card {
