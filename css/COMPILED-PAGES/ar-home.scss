@@ -1,0 +1,33 @@
+@import '../sass/main.scss';
+@import '../sass/style.scss';
+@import '../sass/pages/home';
+body {
+    direction: rtl;
+    text-align: right;
+    .header {
+        .btn-shadow:hover {
+            margin-left: 0;
+            margin-right: 10px;
+        }
+        .mr-sm-2 {
+            margin-right: 0rem !important;
+            margin-left: .5rem !important;
+        }
+    }
+    .dashboard {
+        .toggle-btn {
+            .dashboard-toggle-btn {
+                right: 5px !important;
+            }
+        }
+        .dashboard-list .dashboard-card .dashboard-card-btn {
+            .dashboard-card-list {
+                border-left: 0 !important;
+                border-right: 1px solid #a62a2a !important;
+            }
+            .list-btn {
+                text-align: right !important;
+            }
+        }
+    }
+}

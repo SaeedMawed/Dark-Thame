@@ -5,9 +5,7 @@ $dashboard-width:280px;
     width: 280px;
     height: 900px;
     top: 66px;
-    //left: 0;
     position: sticky;
-    //background-image: linear-gradient(to top, #232526, #434343) !important;
     background-color: #434343 !important;
     transition: $transation;
     z-index: 100;
@@ -86,7 +84,7 @@ $dashboard-width:280px;
                     }
                 }
                 .dashboard-card-list {
-                    margin-left: 25px;
+                    padding: 0 10px;
                     border-left: 1px solid $danger-color;
                     li {
                         .sublist-btn {

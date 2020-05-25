@@ -43,6 +43,10 @@ body {
     @media screen and (min-width: 768px) {
       .header .navbar {
         padding: 1rem; } }
+    .header .navbar .navbar-nav {
+      padding: 0px !important; }
+    .header .navbar .navbar-brand {
+      padding: 0 1rem; }
     .header .navbar .nav-item {
       margin: 0px 5px; }
       @media screen and (max-width: 768px) {
@@ -300,7 +304,7 @@ hr {
             transition: all 0.5s;
             border-radius: 45px; }
         .dashboard .dashboard-list .dashboard-card .dashboard-card-btn .dashboard-card-list {
-          margin-left: 25px;
+          padding: 0 10px;
           border-left: 1px solid #dc3545 !important; }
           .dashboard .dashboard-list .dashboard-card .dashboard-card-btn .dashboard-card-list li .sublist-btn {
             margin: 10px 10px 0 10px;
