@@ -8027,6 +8027,9 @@ hr {
       border-color: #dc3545 !important; }
     .dashboard .dashboard-list .dashboard-card {
       margin-top: 15px; }
+      @media screen and (max-width: 768px) {
+        .dashboard .dashboard-list .dashboard-card {
+          margin-top: 30px; } }
       .dashboard .dashboard-list .dashboard-card .dashboard-card-title {
         text-transform: uppercase;
         font-size: 14px;
@@ -8086,7 +8089,8 @@ hr {
             width: 93%; }
   .dashboard .toggle-btn {
     position: relative;
-    cursor: pointer; }
+    cursor: pointer;
+    list-style: none; }
     .dashboard .toggle-btn .dashboard-toggle-btn {
       position: fixed !important;
       top: 80px !important;
