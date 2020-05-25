@@ -8285,6 +8285,9 @@ body {
     max-width: 25%; } }
 .home .my-product {
   margin: 15px 0 0 10px; }
+  @media screen and (max-width: 768px) {
+    .home .my-product {
+      margin: 15px 8px 0px 8px; } }
   .home .my-product .card {
     max-height: auto;
     box-shadow: 0px 2px 8px #a62a2a, 0px -2px 8px #a62a2a; }
