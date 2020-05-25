@@ -7773,14 +7773,6 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
-/*  Footer Colors
-    Start   */
-/*  End
-    Footer Color    */
-/*  Footer Colors
-    Start   */
-/*  End
-    Footer Color    */
 /*
 ** for hide or remove section from our html page
 */
@@ -7795,16 +7787,6 @@ a.text-dark:hover, a.text-dark:focus {
 ** Animation Mixin
 ** Auto Add Prefixes To Animation
 */
-body {
-  direction: ltr;
-  text-align: left; }
-
-.sideMenu {
-  left: 0; }
-  .sideMenu .list-btn,
-  .sideMenu .dashboard-category {
-    text-align: left; }
-
 .active {
   background: linear-gradient(to left, #6a2b31, #dc3545);
   color: #f8f9fa !important;
@@ -7813,7 +7795,7 @@ body {
 .header {
   position: relative !important; }
   .header .navbar {
-    background: #434343;
+    background: #434343 !important;
     padding: 1rem; }
     @media screen and (min-width: 768px) {
       .header .navbar {
@@ -7867,7 +7849,7 @@ body {
     display: block;
     width: 30px;
     height: 5px;
-    background-color: #dc3545 !important;
+    background-color: #a62a2a !important;
     margin-top: 5px; }
   .header-toggle-btn:hover {
     cursor: pointer !important; }
@@ -8024,7 +8006,7 @@ hr {
   .dashboard .dashboard-list {
     padding: 30px; }
     .dashboard .dashboard-list hr {
-      border-color: #dc3545 !important; }
+      border-color: #a62a2a !important; }
     .dashboard .dashboard-list .dashboard-card {
       margin-top: 15px; }
       @media screen and (max-width: 768px) {
@@ -8045,28 +8027,12 @@ hr {
           color: #f8f9fa !important;
           display: block;
           border: none;
-          text-align: left !important;
+          text-align: left;
           height: 40px;
           padding: 0px 15px;
           overflow: hidden;
           cursor: pointer;
           width: 100%; }
-          .dashboard .dashboard-list .dashboard-card .dashboard-card-btn .list-btn i {
-            width: 30px;
-            height: 30px; }
-          .dashboard .dashboard-list .dashboard-card .dashboard-card-btn .list-btn .left-icon {
-            font-size: 24px;
-            font-weight: 100;
-            float: left !important;
-            display: none; }
-            .dashboard .dashboard-list .dashboard-card .dashboard-card-btn .list-btn .left-icon .img-icon {
-              width: 25px;
-              height: 25px;
-              overflow: hidden;
-              margin-bottom: 10px; }
-          .dashboard .dashboard-list .dashboard-card .dashboard-card-btn .list-btn .right-icon {
-            float: right;
-            font-size: 18px; }
           .dashboard .dashboard-list .dashboard-card .dashboard-card-btn .list-btn .dashboard-category {
             padding-left: 8px;
             margin-top: 10px;
@@ -8076,14 +8042,14 @@ hr {
             white-space: nowrap; }
           .dashboard .dashboard-list .dashboard-card .dashboard-card-btn .list-btn:hover {
             background: none !important;
-            background-color: #434343;
+            background-color: #434343 !important;
             box-shadow: 0 1px 5px, 0 -1px 5px white;
             font-size: initial !important;
             transition: all 0.5s;
             border-radius: 45px; }
         .dashboard .dashboard-list .dashboard-card .dashboard-card-btn .dashboard-card-list {
           padding: 0 10px;
-          border-left: 1px solid #dc3545 !important; }
+          border-left: 1px solid #a62a2a !important; }
           .dashboard .dashboard-list .dashboard-card .dashboard-card-btn .dashboard-card-list li .sublist-btn {
             margin: 10px 10px 0 10px;
             width: 93%; }
@@ -8136,7 +8102,7 @@ hr {
       text-transform: uppercase; }
     .footer .footer-top .segment-tow h2:before {
       content: "|";
-      color: #dc3545 !important;
+      color: #a62a2a !important;
       padding-right: 10px; }
     .footer .footer-top .segment-tow ul {
       margin: 0;
@@ -8154,7 +8120,7 @@ hr {
       text-transform: uppercase; }
     .footer .footer-top .segment-three h2:before {
       content: '|';
-      color: #dc3545 !important;
+      color: #a62a2a !important;
       padding-right: 10px; }
     .footer .footer-top .segment-three a {
       background-color: #494848;
@@ -8172,7 +8138,7 @@ hr {
       text-transform: uppercase; }
     .footer .footer-top .segment-four h2:before {
       content: '|';
-      color: #dc3545 !important;
+      color: #a62a2a !important;
       padding-right: 10px; }
     .footer .footer-top .segment-four form input[type=submit] {
       background: linear-gradient(to left, #6a2b31, #dc3545);

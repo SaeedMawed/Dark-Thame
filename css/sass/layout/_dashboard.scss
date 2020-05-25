@@ -6,7 +6,7 @@ $dashboard-width:280px;
     height: 900px;
     top: 66px;
     position: sticky;
-    background-color: #434343 !important;
+    background-color: $dark-color;
     transition: $transation;
     z-index: 100;
     border: 0 !important;
@@ -43,32 +43,12 @@ $dashboard-width:280px;
                     color: $light-color;
                     display: block;
                     border: none;
-                    text-align: $left;
+                    text-align: left;
                     height: 40px;
                     padding: 0px 15px;
                     overflow: hidden;
                     cursor: pointer;
                     width: 100%;
-                    i {
-                        width: 30px;
-                        height: 30px;
-                    }
-                    .left-icon {
-                        font-size: 24px;
-                        font-weight: 100;
-                        float: $left;
-                        display: none;
-                        .img-icon {
-                            width: 25px;
-                            height: 25px;
-                            overflow: hidden;
-                            margin-bottom: 10px;
-                        }
-                    }
-                    .right-icon {
-                        float: right;
-                        font-size: 18px;
-                    }
                     .dashboard-category {
                         padding-left: 8px;
                         margin-top: 10px;
@@ -79,7 +59,7 @@ $dashboard-width:280px;
                     }
                     &:hover {
                         background: none !important;
-                        background-color: #434343;
+                        background-color: $dark-color;
                         box-shadow: 0 1px 5px, 0 -1px 5px white;
                         font-size: initial !important;
                         transition: all 0.5s;

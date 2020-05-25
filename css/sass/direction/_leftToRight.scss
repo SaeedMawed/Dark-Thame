@@ -1,18 +1,4 @@
-$right:right !important;
-$left: left !important;
 body {
     direction: ltr;
     text-align: left;
-}
-
-.sideMenu {
-    left: 0;
-    .list-btn,
-    .dashboard-category {
-        text-align: left;
-    }
-}
-
-.myPage {
-    //margin-right: $dashboard-width;
 }
